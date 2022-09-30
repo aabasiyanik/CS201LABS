@@ -1,4 +1,4 @@
-package HomeWork2.first_pikachu;
+package LAB2.first_pikachu;
 
 public class pikachu {
     private String name;
