@@ -1,4 +1,4 @@
-package HomeWork2.first_pikachu;
+package LAB2.first_pikachu;
 
 public class CS201 {
     public static void main(String[] args) {
@@ -10,7 +10,6 @@ public class CS201 {
         myPokemon.secondSkill("Quick Attack");
         myPokemon.setName("pikachu");
         System.out.println(myPokemon);
-
 
     }
 }

@@ -65,7 +65,6 @@ public class Question3 {
             newHour = hour - 12;
             System.out.println("The time in 12-hour clock is " + newHour + ":" + minute + ":" + second + " P.M.");
 
-
         } else if (hour < 13 && hour != 12) {
             newHour = hour;
             System.out.println("The time in 12-hour clock is " + newHour + ":" + minute + ":" + second + " A.M.");
@@ -77,5 +76,6 @@ public class Question3 {
             System.out.println("The time in 12-hour clock is " + newHour + ":" + minute + ":" + second + " A.M.");
         }
 
+        input.close();
     }
 }

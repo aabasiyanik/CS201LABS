@@ -1,4 +1,4 @@
-package HomeWork1;
+package LAB1;
 
 public class SetofVariables {
     public static void main(String[] args) {

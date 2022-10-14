@@ -6,12 +6,13 @@ public class Question3 {
         int num = 7;
         int lim = 0;
 
-        while (lim<200/7) {
+        while (lim < 200 / 7) {
 
             System.out.print(num + " ");
-            num = num+7;
+            num = num + 7;
             lim++;
-            if (lim%4 ==0) System.out.println();
+            if (lim % 4 == 0)
+                System.out.println();
 
         }
 
