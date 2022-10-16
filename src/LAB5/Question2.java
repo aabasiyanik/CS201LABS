@@ -11,12 +11,11 @@ public class Question2 {
     static int lowerRange = 1, upperRange = 100;
 
     public static void main(String[] args) {
-        System.out.println(bombNum);
 
         while (player1 != bombNum || player2 != bombNum) {
             System.out.println("Player1 turn, guess a number");
             askUser1();
-            if (player1 > 100 || player1 < 1) {
+            while (player1 > 100 || player1 < 1) {
                 System.out.println("Please guess a valid number, the range should be 1 to 100");
                 askUser1();
             }
@@ -26,21 +25,21 @@ public class Question2 {
             } else if (bombNum > player1) {
                 if (lowerRange > player1) {
                     System.out.println("Too low, the range is " + lowerRange + " to " + upperRange);
-                } else if (player1 > lowerRange) {
-                    lowerRange = player1;
+                } else {
+                    lowerRange = player1 + 1;
                     System.out.println("Too low, now the range is " + lowerRange + " to " + upperRange);
                 }
             } else {
                 if (upperRange < player1) {
                     System.out.println("Too low, the range is " + lowerRange + " to " + upperRange);
-                } else if (player1 < upperRange) {
-                    upperRange = player1;
+                } else {
+                    upperRange = player1 - 1;
                     System.out.println("Too high, now the range is " + lowerRange + " to " + upperRange);
                 }
             }
             System.out.println("Player2 turn, guess a number");
             askUser2();
-            if (player2 > 100 || player2 < 1) {
+            while (player2 > 100 || player2 < 1) {
                 System.out.println("Please guess a valid number, the range should be 1 to 100");
                 askUser2();
             }
@@ -50,15 +49,15 @@ public class Question2 {
             } else if (bombNum > player2) {
                 if (lowerRange > player2) {
                     System.out.println("Too low, the range is " + lowerRange + " to " + upperRange);
-                } else if (player2 > lowerRange) {
-                    lowerRange = player2;
+                } else {
+                    lowerRange = player2 + 1;
                     System.out.println("Too low, now the range is " + lowerRange + " to " + upperRange);
                 }
             } else {
                 if (upperRange < player2) {
                     System.out.println("Too low, the range is " + lowerRange + " to " + upperRange);
-                } else if (player2 < upperRange) {
-                    upperRange = player2;
+                } else {
+                    upperRange = player2 - 1;
                     System.out.println("Too high, now the range is " + lowerRange + " to " + upperRange);
                 }
             }
